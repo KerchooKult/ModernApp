@@ -64,7 +64,7 @@ export const darkTheme = createTheme({
  * @returns Current theme
  */
 export function resolveTheme(dark: boolean) {
-  return dark ? darkTheme : lightTheme
+  return dark ? darkTheme : darkTheme
 }
 
 /**

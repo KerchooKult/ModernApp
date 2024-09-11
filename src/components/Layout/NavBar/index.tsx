@@ -1,7 +1,7 @@
 import { Bookmarks } from '@styled-icons/boxicons-regular/Bookmarks'
 import { Edit } from '@styled-icons/boxicons-regular/Edit'
 import { Home } from '@styled-icons/boxicons-regular/Home'
-import { LogOut } from '@styled-icons/boxicons-regular/LogOut'
+import { LogIn } from '@styled-icons/boxicons-regular/LogIn'
 import { Settings2Outline } from '@styled-icons/evaicons-outline/Settings2Outline'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -29,7 +29,7 @@ export default function NavBar(props: NavBarProps) {
         <Home size={30} />
       </NavButton>
       <NavButton
-        href="/bookmarks"
+        href="/favorites"
         navButtonIndex={1}
         navBarCurrentIndex={index}
         setIndex={setIndex}
@@ -37,7 +37,7 @@ export default function NavBar(props: NavBarProps) {
         <Bookmarks size={30} />
       </NavButton>
       <NavButton
-        href="/write"
+        href="/post"
         navButtonIndex={2}
         navBarCurrentIndex={index}
         setIndex={setIndex}
@@ -45,14 +45,14 @@ export default function NavBar(props: NavBarProps) {
         <Edit size={30} />
       </NavButton>
       <Spacer flex={1} />
-      <S.NavDarkMode
+      {/* <S.NavDarkMode
         width="30px"
         height="30px"
         dark={props.dark}
         toggleDarkMode={() => {
           props.toggleDarkTheme(!props.dark)
         }}
-      />
+      /> */}
       <NavButton
         href="/settings"
         navButtonIndex={3}
@@ -62,12 +62,13 @@ export default function NavBar(props: NavBarProps) {
         <Settings2Outline size={30} />
       </NavButton>
       <NavButton
-        href="/logout"
+        href="/login"
         navButtonIndex={4}
         navBarCurrentIndex={index}
         setIndex={setIndex}
       >
-        <LogOut size={30} />
+        {/* <LogOut size={30} /> */}
+        <LogIn size={30} />
       </NavButton>
     </S.NavBar>
   )
