@@ -23,7 +23,7 @@ export const HomeImage = styled(Image)`
   ${({ theme }) =>
     theme.palette.mode === 'dark' &&
     css`
-      filter: invert(100%);
+      filter: invert(0%);
     `}
 `
 

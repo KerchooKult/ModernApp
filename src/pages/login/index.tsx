@@ -1,23 +1,41 @@
+import Head from 'next/head'
+import styled from 'styled-components'
+
+export const HomeLayout = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+`
+
 export default function Login() {
   return (
-    <div style={styles.pageContainer}>
-      <div style={styles.loginBox}>
-        <h1 style={styles.title}>Login</h1>
-        <form style={styles.form}>
-          <input type="text" placeholder="Username" style={styles.input} />
-          <input type="password" placeholder="Password" style={styles.input} />
-          <button type="submit" style={styles.loginButton}>
-            Log In
-          </button>
-        </form>
-        <div style={styles.footer}>
-          {/* <a href="#" style={styles.link}>Forgot Password?</a> */}
-          <a href="/register" style={styles.link}>
-            Register
-          </a>
+    <>
+      <Head>
+        <title>Login</title>
+      </Head>
+      <div style={styles.pageContainer}>
+        <div style={styles.loginBox}>
+          <h1 style={styles.title}>Login</h1>
+          <form style={styles.form}>
+            <input type="text" placeholder="Username" style={styles.input} />
+            <input
+              type="password"
+              placeholder="Password"
+              style={styles.input}
+            />
+            <button type="submit" style={styles.loginButton}>
+              Log In
+            </button>
+          </form>
+          <div style={styles.footer}>
+            {/* <a href="#" style={styles.link}>Forgot Password?</a> */}
+            <a href="/register" style={styles.link}>
+              Register
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="/favicon/favicon-32x32.png" rel="icon" />
+          <link href="/favicon/favicon.png" rel="icon" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link

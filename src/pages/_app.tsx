@@ -47,7 +47,7 @@ export default function MyApp({
         }}
       >
         <Head>
-          <title> Front template </title>
+          <title>myPhiSig v2</title>
         </Head>
         <MuiThemeProvider theme={theme}>
           <CssBaseline />
